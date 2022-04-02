@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,38 +13,44 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HomeWork1_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XfD-Cb-s7c">
-                                <rect key="frame" x="132" y="94" width="150" height="518"/>
+                                <rect key="frame" x="132" y="50" width="111" height="401"/>
                                 <subviews>
                                     <stackView opaque="NO" alpha="0.55000000000000004" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="dgN-VU-pVs">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="518"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="111" height="401"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UY2-cG-0Zs">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="149.33333333333334"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="111" height="110.5"/>
                                                 <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="UY2-cG-0Zs" secondAttribute="height" multiplier="150:149" id="gyi-eI-g3N"/>
+                                                </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n5Z-Yu-RxH">
-                                                <rect key="frame" x="0.0" y="184.33333333333331" width="150" height="149.33333333333331"/>
+                                                <rect key="frame" x="0.0" y="145.5" width="111" height="110"/>
                                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="n5Z-Yu-RxH" secondAttribute="height" multiplier="150:149" id="mh0-4Y-eRa"/>
+                                                </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Svj-KY-d1f">
-                                                <rect key="frame" x="0.0" y="368.66666666666669" width="150" height="149.33333333333331"/>
+                                                <rect key="frame" x="0.0" y="290.5" width="111" height="110.5"/>
                                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Svj-KY-d1f" secondAttribute="height" multiplier="150:149" id="o1O-vJ-olY"/>
+                                                </constraints>
                                             </view>
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="XfD-Cb-s7c" secondAttribute="height" multiplier="75:259" id="VV3-mD-8LA"/>
-                                </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZC-JB-0w2">
-                                <rect key="frame" x="132" y="742" width="150" height="31"/>
+                                <rect key="frame" x="132" y="547" width="111" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="9KT-Cl-zrz"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="9KT-Cl-zrz"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="START">
@@ -53,7 +59,7 @@
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="showColorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wkd-lx-szg"/>
+                                    <action selector="showColorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oJb-gh-IbH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -77,7 +83,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-13.043478260869566" y="52.901785714285715"/>
+            <point key="canvasLocation" x="-268" y="100"/>
         </scene>
     </scenes>
     <resources>
